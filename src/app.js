@@ -9,6 +9,7 @@ const { forecast } = require("./utils/forecast");
 const publicDirPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
+const port = process.env.PORT || 3000;
 
 //* setup express to serve files in the public directory
 app.use(express.static(publicDirPath));
@@ -64,6 +65,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server listening on port http://localhost:3000");
+app.listen(port, () => {
+  console.log("Server listening on port http://localhost:" + port);
 });
