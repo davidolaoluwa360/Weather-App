@@ -12,8 +12,8 @@ weatherForm.addEventListener("submit", (event) => {
       if (data.error) {
         messageOne.innerHTML = data.error;
       } else {
-        messageOne.innerHTML = `The temperature at ${data.place} is ${data.temperature} degrees`;
-        messageTwo.innerHTML = ` The temperature feels like ${data.feelslike} degrees`;
+        messageOne.innerHTML = `The temperature at ${data.place} is ${data.temperature} fahrenheit `;
+        messageTwo.innerHTML = ` The temperature feels like ${data.feelslike} fahrenheit`;
       }
     })
     .catch((err) => {
