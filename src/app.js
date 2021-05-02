@@ -26,7 +26,7 @@ app.get("", (req, res) => {
 
 //* GET/about
 app.get("/about", (req, res) => {
-  res.render("about", { title: "About Me", name: "Atebisun David" });
+  res.render("about", { title: "About", name: "Atebisun David" });
 });
 
 //* GET/Help
